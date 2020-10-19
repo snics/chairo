@@ -57,6 +57,25 @@ describe('register()', () => {
         expect(result).to.equal({ id: 1 });
     });
 
+    it('user seneca-promisify with message() and post', async (done) => {
+
+        const server = new Hapi.Server();
+        await server.register({ plugin: Chairo }).catch((err) => {
+
+            expect(err).to.not.exist();
+        });
+
+        let id = 0;
+        server.seneca.message({ generate: 'id' }, async (message) => {
+
+            return await { id: ++id };
+        });
+
+        const result = await server.seneca.post({ generate: 'id' });
+
+        expect(result).to.equal({ id: 1 });
+    });
+
     it('uses passed in seneca instance if provided', async (done) => {
 
         const seneca = new Seneca({ log: 'silent' });
