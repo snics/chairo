@@ -1,5 +1,5 @@
 {
-  "name": "chairo",
+  "name": "@devninjas/chairo",
   "description": "Seneca micro-services plugin for hapi",
   "version": "1.0.0",
   "repository": "git://github.com/snics/chairo",
