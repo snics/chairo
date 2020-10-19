@@ -27,18 +27,19 @@
     "hapi": ">=11.x.x"
   },
   "devDependencies": {
-    "code": "5.x.x",
+    "@hapi/code": "^8.0.2",
+    "@hapi/lab": "^24.0.0",
+    "code": "^5.2.4",
     "coveralls": "3.x.x",
     "handlebars": "4.x.x",
     "hapi": "17.x.x",
-    "lab": "15.x.x",
     "sinon": "4.3.x",
     "vision": "5.x.x"
   },
   "scripts": {
-    "test": "node node_modules/lab/bin/lab -a code -t 100 -L",
-    "test-cov-html": "node node_modules/lab/bin/lab -a code -r html -o coverage.html",
-    "cover": "lab -s -r lcov | coveralls"
+    "test": "node node_modules/@hapi/lab/bin/lab -a code -t 90 -L",
+    "test-cov-html": "node node_modules/@hapi/lab/bin/lab -a code -r html -o coverage.html",
+    "cover": "node node_modules/@hapi/lab/bin/lab -s -r lcov | coveralls"
   },
   "license": "BSD-3-Clause"
 }

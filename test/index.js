@@ -2,9 +2,9 @@
 
 // Load modules
 
-const Code = require('code');
+const Code = require('@hapi/code');
 const Hapi = require('hapi');
-const Lab = require('lab');
+const Lab = require('@hapi/lab');
 const Seneca = require('seneca');
 const Vision = require('vision');
 const Chairo = require('../');
