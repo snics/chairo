@@ -1,8 +1,8 @@
 {
   "name": "chairo",
   "description": "Seneca micro-services plugin for hapi",
-  "version": "3.0.0",
-  "repository": "git://github.com/hapijs/chairo",
+  "version": "1.0.0",
+  "repository": "git://github.com/snics/chairo",
   "main": "lib/index.js",
   "keywords": [
     "hapi",
