@@ -3,13 +3,22 @@
 [![npm version][npm-badge]][npm-url]
 [![Build Status][travis-badge]][travis-url]
 
+> This is a fork of [geek/chairo](https://github.com/geek/chairo)
+
 **chairo** ("happy" in ancient Greek: χαίρω) is a [**Seneca**](http://senecajs.org/) micro-services plugin
 for [hapi](https://github.com/hapijs/hapi). The plugin integrates the **Seneca** functionality into
 **hapi** and provide tools to map its actions to server methods and views for easy access.
 
-Lead Maintainer - [Wyatt Preul](https://github.com/geek)
+- Lead Maintainer - [Nico Swiatecki](https://github.com/snics)
+- Old Maintainer of  [geek/chairo](https://github.com/geek/chairo) - [Wyatt Preul](https://github.com/geek)
 
 ### Usage
+
+#### Install
+
+```shell
+npm i @devninjas/chairo -s
+```
 
 #### Plugin Registration
 
