@@ -14,26 +14,27 @@
     "node": ">=4.0.0"
   },
   "dependencies": {
-    "boom": "7.1.x",
-    "bounce": "1.2.x",
-    "hoek": "5.0.x",
+    "@hapi/boom": "^9.1.x",
+    "@hapi/bounce": "^2.x.x",
+    "@hapi/hoek": "^9.1.x",
+    "@hapi/joi": "^17.1.1",
     "items": "2.1.x",
-    "joi": "13.1.x",
-    "jsonic": "0.3.x",
-    "seneca": "3.x.x",
-    "seneca-as-promised": "2.0.x"
+    "jsonic": "1.x.x",
+    "seneca": "3.22.x",
+    "seneca-as-promised": "2.0.x",
+    "transform-hoek": "0.0.1"
   },
   "peerDependencies": {
-    "hapi": ">=11.x.x"
+    "hapi": ">=17.x.x"
   },
   "devDependencies": {
     "@hapi/code": "^8.0.2",
     "@hapi/lab": "^24.0.0",
     "code": "^5.2.4",
-    "coveralls": "3.x.x",
-    "handlebars": "4.x.x",
+    "coveralls": "3.1.x",
+    "handlebars": "4.7.x",
     "hapi": "17.x.x",
-    "sinon": "4.3.x",
+    "sinon": "9.2.x",
     "vision": "5.x.x"
   },
   "scripts": {
