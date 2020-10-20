@@ -1,7 +1,6 @@
 # chairo
 
 [![npm version][npm-badge]][npm-url]
-[![Build Status][travis-badge]][travis-url]
 
 > This is a fork of [geek/chairo](https://github.com/geek/chairo)
 
@@ -18,6 +17,11 @@ for [hapi](https://github.com/hapijs/hapi). The plugin integrates the **Seneca**
 
 ```shell
 npm i @devninjas/chairo -s
+// Install for œhapi/hapi v18 or higher
+npm i @devninjas/chairo@2 -s
+
+// Install for œhapi/hapi v17
+npm i @devninjas/chairo@1 -s
 ```
 
 #### Plugin Registration
@@ -311,7 +315,5 @@ server.route({
 });
 ```
 
-[npm-badge]: https://badge.fury.io/js/chairo.svg
-[npm-url]: https://badge.fury.io/js/chairo
-[travis-badge]: https://api.travis-ci.org/hapijs/chairo.svg
-[travis-url]: https://travis-ci.org/hapijs/chairo
+[npm-badge]: https://badge.fury.io/js/%40devninjas%2Fchairo.svg
+[npm-url]: https://www.npmjs.com/package/@devninjas/chairo
