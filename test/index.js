@@ -2,11 +2,11 @@
 
 // Load modules
 
+const Hapi = require('@hapi/hapi');
 const Code = require('@hapi/code');
-const Hapi = require('hapi');
 const Lab = require('@hapi/lab');
 const Seneca = require('seneca');
-const Vision = require('vision');
+const Vision = require('@hapi/vision');
 const Chairo = require('../');
 const Sinon = require('sinon');
 
@@ -530,7 +530,8 @@ describe('Request', () => {
 
         const handler = function (request, reply) {
 
-            return request.seneca.fixedargs.req$.url.path;
+            expect(request.seneca.fixedargs.req$.url.pathname).to.exist();
+            return request.seneca.fixedargs.req$.url.pathname;
         };
 
         server.route({ method: 'GET', path: '/', handler });

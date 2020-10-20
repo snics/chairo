@@ -5,9 +5,9 @@
   "repository": "git://github.com/snics/chairo",
   "main": "lib/index.js",
   "scripts": {
-    "test": "node node_modules/@hapi/lab/bin/lab -a code -t 90 -L",
-    "test-cov-html": "node node_modules/@hapi/lab/bin/lab -a code -r html -o coverage.html",
-    "cover": "node node_modules/@hapi/lab/bin/lab -s -r lcov | coveralls"
+    "test": "lab -a @hapi/code -vL -t 90 -L",
+    "test-cov-html": "lab -a code -r html -o coverage.html",
+    "cover": "lab -s -r lcov | coveralls"
   },
   "keywords": [
     "hapi",
@@ -25,8 +25,8 @@
     "@hapi/joi": "^17.1.1",
     "items": "2.1.x",
     "jsonic": "1.x.x",
-    "seneca": "3.22.x",
-    "seneca-as-promised": "2.0.x",
+    "seneca": "3.x.x",
+    "seneca-as-promised": "2.x.x",
     "seneca-promisify": "^2.x.x",
     "transform-hoek": "0.0.1"
   },
@@ -35,14 +35,13 @@
   },
   "devDependencies": {
     "@hapi/code": "^8.x.X",
+    "@hapi/hapi": "^18.x.x",
     "@hapi/lab": "^24.x.x",
-    "code": "^5.2.4",
+    "@hapi/vision": "^6.x.x",
     "coveralls": "3.1.x",
     "eslint": "4.x.x",
-    "handlebars": "4.7.x",
-    "hapi": "17.x.x",
-    "sinon": "9.2.x",
-    "vision": "5.x.x"
+    "handlebars": "4.x.x",
+    "sinon": "9.x.x"
   },
   "license": "BSD-3-Clause"
 }
