@@ -1,7 +1,7 @@
 {
   "name": "@devninjas/chairo",
   "description": "Seneca micro-services plugin for hapi",
-  "version": "3.0.0",
+  "version": "4.0.0",
   "repository": "git://github.com/snics/chairo",
   "main": "lib/index.js",
   "scripts": {
@@ -35,7 +35,7 @@
   },
   "devDependencies": {
     "@hapi/code": "^8.x.X",
-    "@hapi/hapi": "^19.x.x",
+    "@hapi/hapi": "^20.x.x",
     "@hapi/lab": "^24.x.x",
     "@hapi/vision": "^6.x.x",
     "coveralls": "3.1.x",

@@ -16,11 +16,13 @@ for [hapi](https://github.com/hapijs/hapi). The plugin integrates the **Seneca**
 #### Install
 
 ```shell
-npm i @devninjas/chairo -s
-// Install for œhapi/hapi v19 or higher
+// Install for œhapi/hapi v20 or higher
+npm i @devninjas/chairo@4 -s
+
+// Install for œhapi/hapi v19
 npm i @devninjas/chairo@3 -s
 
-// Install for œhapi/hapi v18 or higher
+// Install for œhapi/hapi v18
 npm i @devninjas/chairo@2 -s
 
 // Install for œhapi/hapi v17
