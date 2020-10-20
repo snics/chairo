@@ -4,6 +4,11 @@
   "version": "1.0.0",
   "repository": "git://github.com/snics/chairo",
   "main": "lib/index.js",
+  "scripts": {
+    "test": "node node_modules/@hapi/lab/bin/lab -a code -t 90 -L",
+    "test-cov-html": "node node_modules/@hapi/lab/bin/lab -a code -r html -o coverage.html",
+    "cover": "node node_modules/@hapi/lab/bin/lab -s -r lcov | coveralls"
+  },
   "keywords": [
     "hapi",
     "plugin",
@@ -11,7 +16,7 @@
     "seneca"
   ],
   "engines": {
-    "node": ">=4.0.0"
+    "node": ">=12.0.0"
   },
   "dependencies": {
     "@hapi/boom": "^9.1.x",
@@ -22,26 +27,22 @@
     "jsonic": "1.x.x",
     "seneca": "3.22.x",
     "seneca-as-promised": "2.0.x",
-    "seneca-promisify": "^2.0.0",
+    "seneca-promisify": "^2.x.x",
     "transform-hoek": "0.0.1"
   },
   "peerDependencies": {
     "hapi": ">=17.x.x"
   },
   "devDependencies": {
-    "@hapi/code": "^8.0.2",
-    "@hapi/lab": "^24.0.0",
+    "@hapi/code": "^8.x.X",
+    "@hapi/lab": "^24.x.x",
     "code": "^5.2.4",
     "coveralls": "3.1.x",
+    "eslint": "4.x.x",
     "handlebars": "4.7.x",
     "hapi": "17.x.x",
     "sinon": "9.2.x",
     "vision": "5.x.x"
-  },
-  "scripts": {
-    "test": "node node_modules/@hapi/lab/bin/lab -a code -t 90 -L",
-    "test-cov-html": "node node_modules/@hapi/lab/bin/lab -a code -r html -o coverage.html",
-    "cover": "node node_modules/@hapi/lab/bin/lab -s -r lcov | coveralls"
   },
   "license": "BSD-3-Clause"
 }
